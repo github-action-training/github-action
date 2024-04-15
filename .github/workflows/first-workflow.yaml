@@ -18,10 +18,10 @@ jobs :
      - name: View sw Version
        run: sw_vers
   dependant-job:
-    runs-on : windows-lates
+    runs-on : windows-latest
     needs : run-shell-commands
     steps:
       - name: echo a string
-        run: Wripe-Ouput "Windows String"
+        run: Wripe-Output "Windows String"
       - name: Error Step
         run: doesnotexits  
