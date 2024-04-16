@@ -1,5 +1,5 @@
 name: Checkout
-on: [push]
+on:  [push]
 
 jobs:
   checkout-action:
