@@ -20,6 +20,8 @@ jobs:
         run: npm install
       - name: Run Tests 
         run: npm test  
+        env:
+          PATH: ${{ github.workspace }}/node_modules/.bin:$PATH
       - name: Upload Code Coverage Report
         uses: actions/upload-artifact@v3
         if: always()
