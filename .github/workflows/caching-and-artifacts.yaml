@@ -18,6 +18,8 @@ jobs:
         run: echo '${{ toJSON(steps.cache-dependencies.outputs) }}'
       - name: Install dependencies
         run: npm install
+      - name: Make Jest executable
+        run: chmod +x ./node_modules/.bin/jest
       - name: Run Tests
         run: npm test
       - name: Upload Code Coverage Report
