@@ -6,6 +6,10 @@
   "scripts": {
     "test": "jest --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github-action-training/github-action.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
