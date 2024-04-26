@@ -10,7 +10,7 @@ jobs:
         uses: ./.github/actions/slack-joke
         id: slack-joke
         with:
-          slack_username: Gaspard pierre Dillard
+          slack_username: GaspardpierreDillard
           upload_joke: true
           slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
       - name: Displaying joke output
